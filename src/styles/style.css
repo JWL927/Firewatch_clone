@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ffaf1b;
+}
+
+nav {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #210002;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+nav .title {
+  padding: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffaf00;
+}
+nav .title:hover {
+  background-color: #5a1715;
+  cursor: pointer;
+}
+nav .menu ul {
+  display: flex;
+  list-style-type: none;
+}
+nav .menu ul li {
+  padding: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffaf00;
+}
+nav .menu ul li:hover {
+  background-color: #5a1715;
+  cursor: pointer;
+}
+
+.page {
+  height: auto;
+}
+.page .images {
+  height: 1000px;
+  position: relative;
+  z-index: 10;
+}
+.page .images .images_layer {
+  width: 100%;
+  height: 1000px;
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  position: absolute;
+}
+.page .images .img-1 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax0.png");
+  background-color: #ffaf1b;
+  position: fixed;
+  transform: translate3d(0px, 0px, 0px);
+}
+.page .images .img-2 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax1.png");
+  position: fixed;
+  z-index: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+.page .images .img-3 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax2.png");
+  position: fixed;
+  z-index: 2;
+  transform: translate3d(0px, 0px, 0px);
+}
+.page .images .img-4 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax3.png");
+  position: fixed;
+  z-index: 3;
+  transform: translate3d(0px, 0px, 0px);
+}
+.page .images .img-5 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax4.png");
+  position: fixed;
+  z-index: 4;
+  transform: translate3d(0px, 0px, 0px);
+}
+.page .images .img-6 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax5.png");
+  position: fixed;
+  z-index: 5;
+  transform: translate3d(0px, 0px, 0px);
+}
+.page .images .img-7 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax6.png");
+  position: fixed;
+  z-index: 6;
+  transform: translate3d(0px, 0px, 0px);
+}
+.page .images .img-8 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax7.png");
+  position: fixed;
+  z-index: 7;
+  transform: translate3d(0px, 0px, 0px);
+}
+.page .images .img-9 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax8.png");
+  position: absolute;
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 1000px;
+  z-index: 8;
+}
+.page .main {
+  background-color: #210002;
+  position: relative;
+  z-index: 99;
+  width: 100%;
+}
+.page .main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.page .main .container .purchase {
+  height: 50px;
+  margin: 10px;
+  color: #ffaf00;
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-weight: 100;
+  text-align: center;
+}
+.page .main .container .method ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  max-width: 1000px;
+}
+.page .main .container .method ul li {
+  background-color: #ffaf00;
+  margin: 20px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  width: 370px;
+  padding: 3px;
+  text-align: center;
+}
+.page .main .container .method ul li:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.page .main .container .video {
+  position: relative;
+  margin: 10px;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 700px;
+  aspect-ratio: 16/10;
+}
+.page .main .container .video iframe {
+  position: absolute;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.page .main .container .detail {
+  max-width: 800px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+.page .main .container .detail .header {
+  color: #ffaf00;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.page .main .container .detail .article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #ffaf00;
+  font-size: 23px;
+}
+.page .main .container .detail .article .first {
+  width: 47%;
+  font-weight: 100;
+}
+.page .main .container .detail .article .second {
+  width: 47%;
+  font-weight: 100;
+}
+.page .main .container .more {
+  width: 700px;
+  height: 160px;
+}
+.page .main .container .more ul {
+  display: flex;
+  list-style-type: none;
+  color: #210002;
+  justify-content: center;
+  align-items: center;
+}
+.page .main .container .more ul li {
+  margin: 30px;
+  background-color: #973700;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding: 3px 20px;
+}
+.page .main .container .more ul li:hover {
+  background-color: #ffaf00;
+}
+.page .main .container .screen {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page .main .container .screen img {
+  max-width: 450px;
+  max-height: 250px;
+  width: 40%;
+  height: 40%;
+  margin: 20px;
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+.page .main .container .screen img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  color: #ffaf00;
+  font-size: 2em;
+}
+
+@media (max-width: 650px) {
+  .page .main .container .more ul {
+    flex-direction: column;
+  }
+  .page .main .container .more ul li {
+    margin: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .page .main .container .purchase {
+    margin: 30px;
+  }
+}
+@media (max-width: 730px) {
+  .method {
+    height: 400px;
+  }
+  .method ul {
+    width: 500px;
+  }
+  footer {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 880px) {
+  .page .main .container .detail .article {
+    flex-direction: column;
+  }
+  .page .main .container .detail .article .first {
+    width: 100%;
+  }
+  .page .main .container .detail .article .second {
+    width: 100%;
+  }
+  .page .main .container .screen img {
+    max-width: 90%;
+    max-height: 70%;
+    width: 90%;
+    height: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */
